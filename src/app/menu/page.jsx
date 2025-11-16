@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import heroImg from "../../../public/main-menu.svg"
+import heroImg from "../../../public/menu.webp"
 import streetIcon from "../../../public/streeticon.svg"
 import mexicanIcon from "../../../public/mexican.svg"
 import loveIcon from "../../../public/firstlove.svg"

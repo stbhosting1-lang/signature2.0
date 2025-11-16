@@ -1,14 +1,14 @@
 import React from 'react'
 import Image from 'next/image'
-import aboutImg from "../../../public/About.svg"
-import history from "../../../public/history&goal.svg"
+import aboutImg from "../../../public/About.webp"
+import history from "../../../public/history&goal.webp"
 import Food from "../../../public/food.svg"
-import Restaurant from "../../../public/Restaurant.svg"
+import Restaurant from "../../../public/Restaurant.webp"
 import StarIcon from "../../../public/stars.svg"
-import foodItem from "../../../public/fooditem.svg"
-import vivek from "../../../public/Vivek.svg"
-import Imtiaz from "../../../public/Imtiaz.svg"
-import riffat from "../../../public/riffat.svg"
+import foodItem from "../../../public/fooditem.webp"
+import vivek from "../../../public/Vivek.webp"
+import Imtiaz from "../../../public/Imtiaz.webp"
+import riffat from "../../../public/riffat.webp"
 import googleIcon from "../../../public/GoogleLogo.svg"
 import reviewStar from "../../../public/yellowstar.svg"
 import DarkFbIcon from "../../../public/redfacebook.svg"
@@ -79,7 +79,7 @@ const page = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 px-4">
 
                 {/* ================= HERO IMAGE SECTION ================= */}
-                <div className="relative w-full lg:w-[1150px] h-[350px] sm:h-[450px] md:h-[550px] lg:h-[700px]">
+                <div className="relative w-full lg:w-[1150px] h-[350px] sm:h-[450px] md:h-[550px] lg:h-[900px]">
                     <Image
                         src={aboutImg}
                         alt="Signature Restaurant"

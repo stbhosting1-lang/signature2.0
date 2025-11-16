@@ -1,8 +1,8 @@
 "use client";
 import Image from "next/image";
-import heroImg from "../../../public/hero.svg";
+import heroImg from "../../../public/hero.webp";
 import menu from "../../../public/menu.svg";
-import Restaurant from "../../../public/restaurent.svg";
+import Restaurant from "../../../public/restaurent.webp";
 import Fcaebook from "../../../public/facebook.svg";
 import Insta from "../../../public/instagram.svg";
 const HomeSection = () => {
