@@ -90,8 +90,8 @@ const HomeSection = () => {
                 <div className="flex flex-col gap-4 sm:gap-6 items-center lg:items-end w-full">
 
                     {/* Menu Card */}
-                    <Link href="/menu" className="block w-full max-w-[520px]">
-                        <div className="relative w-full h-[200px] sm:h-[250px] md:h-[300px] overflow-hidden rounded-xl">
+                    <Link href="/menu" className="block w-full max-w-[520px] relative">
+                        <div className="w-full h-[200px] sm:h-[250px] md:h-[300px] overflow-hidden rounded-xl">
 
                             {/* Image */}
                             <Image
@@ -102,8 +102,8 @@ const HomeSection = () => {
                                 priority
                             />
 
-                            {/* Label */}
-                            <div className="absolute top-0 bg-background w-[100px] h-[30px] flex justify-center items-center rounded-tl-[80px] rounded-br-full">
+                            {/* Label (clickable as part of the card) */}
+                            <div className="absolute top-0 bg-background w-[100px] h-[30px] flex justify-center items-center rounded-tl-[80px] rounded-br-full cursor-pointer">
                                 <p className="text-[14px] sm:text-[15px] text-secondary font-body">
                                     Menu
                                 </p>
@@ -112,10 +112,11 @@ const HomeSection = () => {
                         </div>
                     </Link>
 
+
                     {/* Restaurant Card */}
                     <Link href="https://share.google/VmLnsVhRoQBREFzDe" className="block w-full max-w-[520px]">
 
-                        <div className="relative w-full max-w-[520px] h-[200px] sm:h-[250px] md:h-[300px] overflow-hidden rounded-xl">
+                        <div className="relative w-full max-w-[520px] h-[200px] sm:h-[250px] md:h-[300px] xl:sticky overflow-hidden rounded-xl">
                             <Image
                                 src={Location}
                                 alt="Location"
@@ -131,14 +132,13 @@ const HomeSection = () => {
                         </div>
                     </Link>
                     {/* Book Table Button */}
-                    <button className="bg-bookTableBg w-full max-w-[520px] p-4 sm:p-5 rounded-2xl flex justify-between">
-                        <p className="text-[14px] sm:text-[16px] text-bookTableText font-body">
-                            Book a Table
-                        </p>
-                        <p className="text-[14px] sm:text-[16px] text-bookTableText font-body">
-                            +1 905-459-5559
-                        </p>
-                    </button>
+                    <Link href="tel:+19054595559" className="block w-full max-w-[520px]">
+                        <button className="bg-bookTableBg w-full p-4 sm:p-5 rounded-2xl">
+                            <p className="text-[14px] sm:text-[16px] text-bookTableText font-body text-start">
+                                Book a Table
+                            </p>
+                        </button>
+                    </Link>
 
                     {/* Info Card */}
                     <div className="w-full max-w-[520px] h-auto bg-infoCardBg rounded-xl p-4 sm:p-8">

@@ -24,11 +24,12 @@ import Imtiaz from "../../../public/Imtiaz.webp"
 import riffat from "../../../public/riffat.webp"
 import googleIcon from "../../../public/GoogleLogo.svg"
 import reviewStar from "../../../public/yellowstar.svg"
-import DarkFbIcon from "../../../public/redfacebook.svg"
+import DarkGoogleIcon from "../../../public/redfacebook.svg"
 import DarkInstaIcon from "../../../public/redinsta.svg"
 // Add at the top with other imports
 import { useState } from "react";
 import { ChevronRight } from "lucide-react";
+import Link from 'next/link'
 
 
 const page = () => {
@@ -126,7 +127,7 @@ const page = () => {
                         src={aboutImg}
                         alt="Signature Restaurant"
                         fill
-                        className="object-cover rounded-[20px] rounded-tl-[40px]"
+                        className="object-cover rounded-[20px] rounded-tl-[40px] sticky top-10"
                         priority
                     />
 
@@ -239,9 +240,11 @@ const page = () => {
                             <p className='text-[14px] font-body text-aboutCardParagraph'>Mon – Sun: 04:00 PM – 02:00 AM</p>
                         </div>
 
-                        <button className='bg-background px-4 py-2 border-aboutCardHeading border rounded-lg w-[150px]'>
-                            <p className='text-[16px] text-aboutCardHeading font-body'>See Our Menu</p>
-                        </button>
+                        <Link href="/menu" className="block">
+                            <button className='bg-background px-4 py-2 border-aboutCardHeading border rounded-lg w-[150px]'>
+                                <p className='text-[16px] text-aboutCardHeading font-body'>See Our Menu</p>
+                            </button>
+                        </Link>
                     </div>
 
                     {/* Fine Dining Card */}
@@ -297,21 +300,38 @@ const page = () => {
                         </div>
 
                         <div>
-                            <button className='bg-background px-4 py-2 border-aboutCardHeading border rounded-lg lg:mt-20'>
-                                <p className='text-[16px] text-aboutCardHeading'>Leave Us A Review</p>
-                            </button>
+                            <a
+                                href="https://g.page/r/Ca713M6eAr5xEAI/review"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="block"
+                            >
+                                <button className='bg-background px-4 py-2 border-aboutCardHeading border rounded-lg lg:mt-20 w-full'>
+                                    <p className='text-[16px] text-aboutCardHeading'>
+                                        Leave Us A Review
+                                    </p>
+                                </button>
+                            </a>
                         </div>
                     </div>
 
                     {/* Socials */}
                     <div className='w-full max-w-[700px] bg-gradient-to-r from-cardGradient to-bookTableBg rounded-[20px] p-4 flex justify-between items-center'>
-                        <h3 className='text-[24px] text-bookTableText font-heading'>Our Socials</h3>
+                        <h3 className='text-[24px] text-bookTableText font-heading'>Connect With Us </h3>
 
                         <div className='flex gap-3'>
-                            <Image src={DarkFbIcon} alt='fbIcon' />
-                            <Image src={DarkInstaIcon} alt='instaIcon' />
+                            {/* Google */}
+                            <a href="https://share.google/VmLnsVhRoQBREFzDe" target="_blank" rel="noopener noreferrer">
+                                <Image src={DarkGoogleIcon} width={25} alt='Google icon' className='cursor-pointer' />
+                            </a>
+
+                            {/* Instagram */}
+                            <a href="https://www.instagram.com/signaturebypunjabland/" target="_blank" rel="noopener noreferrer">
+                                <Image src={DarkInstaIcon} width={25} alt='Instagram icon' className='cursor-pointer' />
+                            </a>
                         </div>
                     </div>
+
 
                 </div>
             </div>

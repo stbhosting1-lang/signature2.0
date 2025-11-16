@@ -11,7 +11,7 @@ export const metadata = {
     title: 'Signature Restaurant',
     description: 'Indian Elegance on Every Plate',
     url: 'https://https://signature.punjabland.ca', // optional
-    images: ['/Restaurent.jpg'], // Preview image for social and Vercel
+    images: ['/logo.jpg'], // Preview image for social and Vercel
   },
 }
 

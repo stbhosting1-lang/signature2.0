@@ -26,7 +26,7 @@ module.exports = {
         reviewCardHeading:"#EFE7D2",
         reviewCardParagraph:"#F5F2EAB2",
         cardGradient:"#E8CC77",
-        menuCardsBgColor:"#F3E3B3",
+        menuCardsBgColor:"#FFFFF0",
         menuCardsBorderBottomColor:"#3E011933",
         menuCardsItemsColor:"#000000",
         menuCardstextColor:"#FFFFFF",
