@@ -138,11 +138,38 @@ const page = () => {
                         </h2>
                         <p className="text-[15px] text-secondary/60 font-[400] mt-3">
                             Our journey has been built on flavor, community, and a deep love for food.
-                            After the resounding success of <span className='font-[700]'>Dhaba Junction</span>, the soulful spices of <span className='font-[700]'> Punjab Land,</span>
-                            and the vibrant chaos of <span className='font-[700]'>Chatori Gali,</span> we’re proud to introduce our newest chapter —
+                            After the resounding success of{" "}
+                            <a
+                                href="https://thedhabajunction.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="font-[700] underline"
+                            >
+                                Dhaba Junction
+                            </a>
+                            , the soulful spices of{" "}
+                            <a
+                                href="https://punjabland.ca/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="font-[700] underline"
+                            >
+                                Punjab Land
+                            </a>
+                            , and the vibrant chaos of{" "}
+                            <a
+                                href="https://chatorigali.ca/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="font-[700] underline"
+                            >
+                                Chatori Gali
+                            </a>
+                            , we’re proud to introduce our newest chapter —{" "}
                             <span className='text-[18px] text-secondary'>Signature.</span>
                         </p>
                     </div>
+
                 </div>
 
                 {/* Mobile Info Card */}
@@ -252,7 +279,15 @@ const page = () => {
                         <div className='border-aboutCardBorder border bg-aboutCardBorder/5 p-4 rounded-xl flex flex-col gap-10'>
                             <h2 className='text-[32px] font-heading italic text-secondary'>Redefining the Art of Fine Dining</h2>
                             <p className='text-[15px] text-reviewCardHeading font-[300]'>
-                                <span className='font-[700]'>Signature by</span> <span className='font-[600] underline'>Punjab Land </span>reimagines Indian Fusion through modern fine dining.
+                                <span className='font-[700]'>Signature by</span> <a
+                                    href="https://share.google/VmLnsVhRoQBREFzDe"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="font-[700] underline"
+                                >
+                                    Punjab Land
+                                </a>
+                                reimagines Indian Fusion through modern fine dining.
                                 Each dish blends bold Indian flavors with global artistry, offering an indulgent
                                 experience where tradition meets innovation and every bite tells a story of elevated taste.
                             </p>
