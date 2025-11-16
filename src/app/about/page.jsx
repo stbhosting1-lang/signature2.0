@@ -118,10 +118,10 @@ const page = () => {
         <div className="w-full bg-background py-3">
 
             {/* MAIN GRID */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 px-4">
+            <div className="grid grid-cols-1 xl:grid-cols-2 gap-10 px-4">
 
                 {/* ================= HERO IMAGE SECTION ================= */}
-                <div className="relative w-full lg:w-[1150px] h-[350px] sm:h-[450px] md:h-[550px] lg:h-[900px]">
+                <div className="relative w-full xl:w-[700px] 2xl:w-[1100px] h-[400px] sm:h-[450px] md:h-[550px] lg:h-[650px] xl:h-[800px] overflow-hidden">
                     <Image
                         src={aboutImg}
                         alt="Signature Restaurant"

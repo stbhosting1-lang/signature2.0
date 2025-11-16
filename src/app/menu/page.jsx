@@ -92,7 +92,7 @@ const page = () => {
                 We have <span className='underline'> Jain</span> and <span className='underline'>Vegan options</span> available - please ask your server.
             </>)
         },
-         {
+        {
             category: "The Wok Story (INDO-CHINESE)",
             Icon: wok,
             items: [
@@ -262,7 +262,7 @@ const page = () => {
                     desc: "Burrata cheese in fresh spinach puree",
                     price: "$22"
                 },
-               
+
                 {
                     name: "LAMB BHUNA",
                     desc: "Slow cooked lamb in thick gravy",
@@ -278,7 +278,7 @@ const page = () => {
                 We have <span className='underline'> Jain</span> and <span className='underline'>Vegan options</span> available - please ask your server.
             </>)
         },
-       
+
         {
             category: "Perfect Companions (SIDES)",
             items: [
@@ -458,14 +458,14 @@ const page = () => {
 
     return (
         <div className="w-full bg-background py-5 px-4">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+            <div className="grid grid-cols-1 xl:grid-cols-2 gap-10">
                 {/* Hero Image */}
-                <div className="relative w-full lg:w-[1050px] h-[400px] sm:h-[400px] md:h-[750px] lg:h-[700px] xl:h-[1000px] rounded-[10px] overflow-hidden">
+                <div className="relative w-full xl:w-[700px] 2xl:w-[1100px] h-[400px] sm:h-[450px] md:h-[550px] lg:h-[650px] xl:h-[800px] overflow-hidden">
                     <Image
                         src={heroImg}
                         alt="Signature menu"
                         fill
-                        className="object-cover"
+                        className="object-cover rounded-lg"
                         priority
                     />
                 </div>

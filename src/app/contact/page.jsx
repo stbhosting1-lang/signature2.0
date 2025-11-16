@@ -11,10 +11,10 @@ const page = () => {
         <div className="w-full bg-background py-5 overflow-x-hidden">
 
             {/* GRID WRAPPER */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 px-4 relative">
+            <div className="grid grid-cols-1 xl:grid-cols-2 gap-10 px-4 relative">
 
                 {/* LEFT SIDE HERO */}
-                <div className="relative w-full lg:w-[1150px] h-[400px] sm:h-[400px] md:h-[550px] lg:h-[700px] xl:h-[1000px] rounded-[20px] rounded-tl-[40px] overflow-hidden">
+                <div className="relative w-full lg:w-[700px] 2xl:w-[1100px] h-[400px] sm:h-[400px] md:h-[550px] lg:h-[600px] 2xl:h-[1000px] rounded-[20px] rounded-tl-[40px] overflow-hidden">
                     <Image
                         src={heroImg}
                         alt="Signature Restaurant Hero"
