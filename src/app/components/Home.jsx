@@ -27,12 +27,10 @@ const HomeSection = () => {
 
                     {/* Large screen Info Card */}
                     <div className="hidden md:block absolute bottom-10 md:bottom-20 left-5 sm:left-10 lg:left-28 bg-infoCardBg p-5 md:p-8 rounded-lg w-[90%] max-w-[420px]">
-                        <h2 className="text-[28px] sm:text-[36px] md:text-[48px] font-heading italic text-secondary">
-                            “Indian Elegance on Every Plate”
+                        <h2 className="text-[28px] sm:text-[36px] md:text-[40px] font-heading italic text-secondary">
+                            “Brampton’s First Premium Fine-Dine Experience”
                         </h2>
                         <p className="text-[13px] sm:text-[14px] md:text-[15px] text-secondary/60 font-secondary mt-3">
-                            Brampton’s First Premium Fine-Dine Experience
-
                             Indulge in a world where luxury meets culinary artistry.
                             At Signature, every plate is a masterpiece—crafted with the richness of authentic Indian flavours and elevated with modern fusion techniques.
                             Enjoy an ambiance designed for elegance, a service crafted for comfort, and a dining journey that celebrates taste, culture, and sophistication.
@@ -79,11 +77,9 @@ const HomeSection = () => {
                 {/* Small screen Info Card */}
                 <div className="md:hidden w-full max-w-[420px] bg-infoCardBg p-6 sm:p-10 rounded-lg mx-auto">
                     <h2 className="text-[28px] sm:text-[38px] font-heading italic text-secondary">
-                        “Indian Elegance on Every Plate”
+                        “Brampton’s First Premium Fine-Dine Experience”
                     </h2>
                     <p className="text-[13px] sm:text-[15px] text-secondary/60 font-secondary mt-3">
-                        Brampton’s First Premium Fine-Dine Experience
-
                         Indulge in a world where luxury meets culinary artistry.
                         At Signature, every plate is a masterpiece—crafted with the richness of authentic Indian flavours and elevated with modern fusion techniques.
                         Enjoy an ambiance designed for elegance, a service crafted for comfort, and a dining journey that celebrates taste, culture, and sophistication.
@@ -135,9 +131,12 @@ const HomeSection = () => {
                         </div>
                     </Link>
                     {/* Book Table Button */}
-                    <button className="bg-bookTableBg w-full max-w-[520px] p-4 sm:p-5 rounded-2xl">
-                        <p className="text-[14px] sm:text-[16px] text-bookTableText font-body flex items-start">
+                    <button className="bg-bookTableBg w-full max-w-[520px] p-4 sm:p-5 rounded-2xl flex justify-between">
+                        <p className="text-[14px] sm:text-[16px] text-bookTableText font-body">
                             Book a Table
+                        </p>
+                        <p className="text-[14px] sm:text-[16px] text-bookTableText font-body">
+                            +1 905-459-5559
                         </p>
                     </button>
 
