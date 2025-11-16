@@ -121,7 +121,7 @@ const page = () => {
             <div className="grid grid-cols-1 xl:grid-cols-2 gap-10 px-4">
 
                 {/* ================= HERO IMAGE SECTION ================= */}
-                <div className="relative w-full xl:w-[700px] 2xl:w-[1100px] h-[400px] sm:h-[450px] md:h-[550px] lg:h-[650px] xl:h-[800px] overflow-hidden">
+                <div className="relative w-full xl:w-[650px] 2xl:w-[1100px] h-[400px] sm:h-[450px] md:h-[550px] lg:h-[650px] xl:h-[800px] overflow-hidden">
                     <Image
                         src={aboutImg}
                         alt="Signature Restaurant"
