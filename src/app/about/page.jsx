@@ -57,12 +57,41 @@ const page = () => {
             picture: vivek,
             name: "Vivek Luther",
             title: "Director",
-            desc: (<>
-                "A visionary entrepreneur and creative strategist, Vivek is the driving force behind Signature.
-                With an eye for innovation and a passion for culinary artistry, he has successfully built and led multiple hospitality ventures,
-                including <span className='font-[700] italic underline'> Dhaba Junction, </span> <span className='font-[700] italic underline'> Punjab Land,</span>
-                <span className='font-[700] italic underline'> Chatori Gali, </span>  and  <span className='font-[700] italic underline'> Asian Food Center. </span>
-            </>),
+            desc: (
+                <>
+                    "A visionary entrepreneur and creative strategist, Vivek is the driving force behind Signature.
+                    With an eye for innovation and a passion for culinary artistry, he has successfully built and led multiple hospitality ventures,
+                    including{" "}
+                    <a
+                        href="https://thedhabajunction.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-[700] italic underline"
+                    >
+                        Dhaba Junction
+                    </a>
+                    ,{" "}
+                    <a
+                        href="https://punjabland.ca/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-[700] italic underline"
+                    >
+                        Punjab Land
+                    </a>
+                    ,{" "}
+                    <a
+                        href="https://chatorigali.ca/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-[700] italic underline"
+                    >
+                        Chatori Gali
+                    </a>
+                    , and{" "}
+                    <span className='font-[700] italic underline'>Asian Food Center</span>.
+                </>
+            ),
             desc2: "After launching several successful restaurants, they created Signature. Rooted in tradition and crafted with care, Signature brings authentic flavors and warm hospitality to the heart of Brampton."
         },
         {
