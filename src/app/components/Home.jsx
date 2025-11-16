@@ -1,9 +1,9 @@
 "use client";
 import Image from "next/image";
-import heroImg from "../../../public/hero.webp";
+import heroImg from "../../../public/hero.jpg";
 import menu from "../../../public/homemenu.jpg";
 import Location from "../../../public/location.jpg";
-import Fcaebook from "../../../public/facebook.svg";
+import google from "../../../public/facebook.svg";
 import Insta from "../../../public/instagram.svg";
 import Link from "next/link";
 const HomeSection = () => {
@@ -14,7 +14,7 @@ const HomeSection = () => {
             <div className="grid grid-cols-1 xl:grid-cols-2 gap-10 px-4 relative">
 
                 {/* LEFT SIDE HERO */}
-                <div className="relative w-full xl:w-[850px] 2xl:w-[1300px] h-[400px] sm:h-[450px] md:h-[550px] lg:h-[650px] xl:h-[800px] overflow-hidden">
+                <div className="relative w-full xl:w-[740px] 2xl:w-[1300px] h-[400px] sm:h-[450px] md:h-[550px] lg:h-[650px] xl:h-[800px] overflow-hidden">
 
                     {/* Hero Image */}
                     <Image
@@ -41,16 +41,13 @@ const HomeSection = () => {
 
                     {/* Social Icons */}
                     <div className="absolute bottom-0 right-0 flex justify-end gap-2 bg-background p-1 sm:p-2 rounded-tl-full w-[90px] sm:w-[100px]">
-                        <div className="w-6 h-6 sm:w-8 sm:h-8 relative">
-                            <Image
-                                src={Fcaebook}
-                                alt="Facebook icon"
-                                fill
-                                className="object-contain"
-                                priority
-                            />
-                        </div>
-                        <div className="w-6 h-6 sm:w-8 sm:h-8 relative">
+
+                        {/* Instagram */}
+                        <Link
+                            href="https://www.instagram.com/signaturebypunjabland/"
+                            target="_blank"
+                            className="w-6 h-6 sm:w-8 sm:h-8 relative"
+                        >
                             <Image
                                 src={Insta}
                                 alt="Instagram icon"
@@ -58,8 +55,25 @@ const HomeSection = () => {
                                 className="object-contain"
                                 priority
                             />
-                        </div>
+                        </Link>
+
+                        {/* Google Maps */}
+                        <Link
+                            href="https://share.google/VmLnsVhRoQBREFzDe"
+                            target="_blank"
+                            className="w-6 h-6 sm:w-8 sm:h-8 relative"
+                        >
+                            <Image
+                                src={google}   // replace with a Google icon when you add one
+                                alt="Google Maps icon"
+                                fill
+                                className="object-contain"
+                                priority
+                            />
+                        </Link>
+
                     </div>
+
                 </div>
 
                 {/* Small screen Info Card */}
@@ -119,53 +133,53 @@ const HomeSection = () => {
                                 </p>
                             </div>
                         </div>
-                        </Link>
-                        {/* Book Table Button */}
-                        <button className="bg-bookTableBg w-full max-w-[520px] p-4 sm:p-5 rounded-2xl">
-                            <p className="text-[14px] sm:text-[16px] text-bookTableText font-body flex items-start">
-                                Book a Table
-                            </p>
-                        </button>
+                    </Link>
+                    {/* Book Table Button */}
+                    <button className="bg-bookTableBg w-full max-w-[520px] p-4 sm:p-5 rounded-2xl">
+                        <p className="text-[14px] sm:text-[16px] text-bookTableText font-body flex items-start">
+                            Book a Table
+                        </p>
+                    </button>
 
-                        {/* Info Card */}
-                        <div className="w-full max-w-[520px] h-auto bg-infoCardBg rounded-xl p-4 sm:p-8">
-                            <div className="flex flex-col gap-4 sm:gap-8">
+                    {/* Info Card */}
+                    <div className="w-full max-w-[520px] h-auto bg-infoCardBg rounded-xl p-4 sm:p-8">
+                        <div className="flex flex-col gap-4 sm:gap-8">
 
-                                {/* Opening Hours */}
-                                <div>
-                                    <p className="text-infocardText/60 text-[12px] sm:text-[14px] font-body">
-                                        Opening Hours
-                                    </p>
-                                    <div className="flex justify-between mt-1">
-                                        <p className="text-[14px] sm:text-[15px] font-body text-secondary">Mon - Sun</p>
-                                        <p className="text-[14px] sm:text-[15px] font-body text-secondary">
-                                            4:00 PM - 2:00 AM
-                                        </p>
-                                    </div>
-                                </div>
-
-                                {/* Contact */}
-                                <div>
-                                    <p className="text-infocardText/60 text-[12px] sm:text-[14px] font-body">
-                                        Contact #
-                                    </p>
+                            {/* Opening Hours */}
+                            <div>
+                                <p className="text-infocardText/60 text-[12px] sm:text-[14px] font-body">
+                                    Opening Hours
+                                </p>
+                                <div className="flex justify-between mt-1">
+                                    <p className="text-[14px] sm:text-[15px] font-body text-secondary">Mon - Sun</p>
                                     <p className="text-[14px] sm:text-[15px] font-body text-secondary">
-                                        +1 905-459-5559
+                                        4:00 PM - 2:00 AM
                                     </p>
                                 </div>
-
-                                {/* Location */}
-                                <div>
-                                    <p className="text-infocardText/60 text-[12px] sm:text-[14px] font-body">
-                                        Location
-                                    </p>
-                                    <p className="text-[14px] sm:text-[15px] font-body text-secondary">
-                                        378 Queen St E, Brampton, ON L6V 1C3, Canada
-                                    </p>
-                                </div>
-
                             </div>
+
+                            {/* Contact */}
+                            <div>
+                                <p className="text-infocardText/60 text-[12px] sm:text-[14px] font-body">
+                                    Contact #
+                                </p>
+                                <p className="text-[14px] sm:text-[15px] font-body text-secondary">
+                                    +1 905-459-5559
+                                </p>
+                            </div>
+
+                            {/* Location */}
+                            <div>
+                                <p className="text-infocardText/60 text-[12px] sm:text-[14px] font-body">
+                                    Location
+                                </p>
+                                <p className="text-[14px] sm:text-[15px] font-body text-secondary">
+                                    378 Queen St E, Brampton, ON L6V 1C3, Canada
+                                </p>
+                            </div>
+
                         </div>
+                    </div>
 
                 </div>
             </div>

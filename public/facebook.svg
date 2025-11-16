@@ -1,16 +1,12 @@
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_340_238)">
-<mask id="mask0_340_238" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
-<path d="M24 0H0V24H24V0Z" fill="white"/>
-</mask>
-<g mask="url(#mask0_340_238)">
-<path d="M14.75 22.75H10.25V15.5H9.29999C8.71999 15.5 8.25 15.03 8.25 14.45V12.55C8.25 11.97 8.71999 11.5 9.29999 11.5H10.25V9C10.25 6.93 11.93 5.25 14 5.25H16.7C17.28 5.25 17.75 5.71999 17.75 6.29999V8.70001C17.75 9.28001 17.28 9.75 16.7 9.75H14.75V11.5H16.63C16.95 11.5 17.24 11.64 17.44 11.88C17.64 12.12 17.72 12.44 17.66 12.75L17.28 14.65C17.18 15.14 16.75 15.49 16.25 15.49H14.75V22.75ZM11.75 21.25H13.25V14H15.89L16.09 13H13.26V9.29999C13.26 8.71999 13.73 8.25 14.31 8.25H16.26V6.75H14C12.76 6.75 11.75 7.76 11.75 9V13H9.75V14H11.75V21.25Z" fill="white"/>
-<path d="M15 22.75H9C3.57 22.75 1.25 20.43 1.25 15V9C1.25 3.57 3.57 1.25 9 1.25H15C20.43 1.25 22.75 3.57 22.75 9V15C22.75 20.43 20.43 22.75 15 22.75ZM9 2.75C4.39 2.75 2.75 4.39 2.75 9V15C2.75 19.61 4.39 21.25 9 21.25H15C19.61 21.25 21.25 19.61 21.25 15V9C21.25 4.39 19.61 2.75 15 2.75H9Z" fill="white"/>
-</g>
-</g>
-<defs>
-<clipPath id="clip0_340_238">
-<rect width="24" height="24" fill="white"/>
-</clipPath>
-</defs>
-</svg>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+<svg width="800px" height="800px" viewBox="0 0 48.00 48.00" id="b" xmlns="http://www.w3.org/2000/svg" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1.968">
+<g id="SVGRepo_bgCarrier" stroke-width="0"/>
+<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="SVGRepo_iconCarrier">
+<defs>
+<style>.c{fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;}</style>
+</defs>
+<path class="c" d="m31.6814,34.8868c-1.9155,1.29-4.3586,2.0718-7.2514,2.0718-5.59,0-10.3395-3.7723-12.04-8.8541v-.0195c-.43-1.29-.6841-2.6582-.6841-4.085s.2541-2.795.6841-4.085c1.7005-5.0818,6.45-8.8541,12.04-8.8541,3.1664,0,5.9809,1.0945,8.2286,3.2055l6.1568-6.1568c-3.7332-3.4791-8.5805-5.6095-14.3855-5.6095-8.4045,0-15.6559,4.8277-19.1936,11.8641-1.4659,2.8927-2.3064,6.1568-2.3064,9.6359s.8405,6.7432,2.3064,9.6359v.0195c3.5377,7.0168,10.7891,11.8445,19.1936,11.8445,5.805,0,10.6718-1.9155,14.2291-5.1991,4.0655-3.7527,6.4109-9.2645,6.4109-15.8123,0-1.5245-.1368-2.9905-.3909-4.3977h-20.2491v8.3264h11.5709c-.5082,2.6777-2.0327,4.945-4.3195,6.4695h0Z"/>
+</g>
+</svg>
