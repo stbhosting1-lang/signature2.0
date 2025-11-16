@@ -2,7 +2,7 @@
 import Image from "next/image";
 import heroImg from "../../../public/hero.webp";
 import menu from "../../../public/homemenu.jpg";
-import Restaurant from "../../../public/restaurent.webp";
+import Location from "../../../public/location.jpg";
 import Fcaebook from "../../../public/facebook.svg";
 import Insta from "../../../public/instagram.svg";
 import Link from "next/link";
@@ -31,9 +31,11 @@ const HomeSection = () => {
                             “Indian Elegance on Every Plate”
                         </h2>
                         <p className="text-[13px] sm:text-[14px] md:text-[15px] text-secondary/60 font-secondary mt-3">
-                            Came in for lunch and was pleasantly surprised. Ravi’s (our server)
-                            service was exceptional. The organic salmon, shrimp winter salad, and
-                            blueberry tart were all delicious. A memorable meal!
+                            Brampton’s First Premium Fine-Dine Experience
+
+                            Indulge in a world where luxury meets culinary artistry.
+                            At Signature, every plate is a masterpiece—crafted with the richness of authentic Indian flavours and elevated with modern fusion techniques.
+                            Enjoy an ambiance designed for elegance, a service crafted for comfort, and a dining journey that celebrates taste, culture, and sophistication.
                         </p>
                     </div>
 
@@ -66,9 +68,11 @@ const HomeSection = () => {
                         “Indian Elegance on Every Plate”
                     </h2>
                     <p className="text-[13px] sm:text-[15px] text-secondary/60 font-secondary mt-3">
-                        Came in for lunch and was pleasantly surprised. Ravi’s (our server)
-                        service was exceptional. The organic salmon, shrimp winter salad, and
-                        blueberry tart were all delicious. A memorable meal!
+                        Brampton’s First Premium Fine-Dine Experience
+
+                        Indulge in a world where luxury meets culinary artistry.
+                        At Signature, every plate is a masterpiece—crafted with the richness of authentic Indian flavours and elevated with modern fusion techniques.
+                        Enjoy an ambiance designed for elegance, a service crafted for comfort, and a dining journey that celebrates taste, culture, and sophistication.
                     </p>
                 </div>
 
@@ -76,7 +80,7 @@ const HomeSection = () => {
                 <div className="flex flex-col gap-4 sm:gap-6 items-center lg:items-end w-full">
 
                     {/* Menu Card */}
-                    <Link href="/about" className="block w-full max-w-[520px]">
+                    <Link href="/menu" className="block w-full max-w-[520px]">
                         <div className="relative w-full h-[200px] sm:h-[250px] md:h-[300px] overflow-hidden rounded-xl">
 
                             {/* Image */}
@@ -99,67 +103,69 @@ const HomeSection = () => {
                     </Link>
 
                     {/* Restaurant Card */}
-                    <div className="relative w-full max-w-[520px] h-[200px] sm:h-[250px] md:h-[300px] overflow-hidden rounded-xl">
-                        <Image
-                            src={Restaurant}
-                            alt="Restaurant"
-                            fill
-                            className="object-cover rounded-xl rounded-tl-[30px]"
-                            priority
-                        />
-                        <div className="absolute top-0 bg-background w-[140px] sm:w-[160px] h-[30px] flex justify-center items-center rounded-tl-[80px] rounded-br-full">
-                            <p className="text-[14px] sm:text-[15px] text-secondary font-body">
-                                Our Restaurant
-                            </p>
-                        </div>
-                    </div>
+                    <Link href="https://share.google/VmLnsVhRoQBREFzDe" className="block w-full max-w-[520px]">
 
-                    {/* Book Table Button */}
-                    <button className="bg-bookTableBg w-full max-w-[520px] p-4 sm:p-5 rounded-2xl">
-                        <p className="text-[14px] sm:text-[16px] text-bookTableText font-body flex items-start">
-                            Book a Table
-                        </p>
-                    </button>
-
-                    {/* Info Card */}
-                    <div className="w-full max-w-[520px] h-auto bg-infoCardBg rounded-xl p-4 sm:p-8">
-                        <div className="flex flex-col gap-4 sm:gap-8">
-
-                            {/* Opening Hours */}
-                            <div>
-                                <p className="text-infocardText/60 text-[12px] sm:text-[14px] font-body">
-                                    Opening Hours
+                        <div className="relative w-full max-w-[520px] h-[200px] sm:h-[250px] md:h-[300px] overflow-hidden rounded-xl">
+                            <Image
+                                src={Location}
+                                alt="Location"
+                                fill
+                                className="object-cover rounded-xl rounded-tl-[30px]"
+                                priority
+                            />
+                            <div className="absolute top-0 bg-background w-[140px] sm:w-[160px] h-[30px] flex justify-center items-center rounded-tl-[80px] rounded-br-full">
+                                <p className="text-[14px] sm:text-[15px] text-secondary font-body">
+                                    Our Location
                                 </p>
-                                <div className="flex justify-between mt-1">
-                                    <p className="text-[14px] sm:text-[15px] font-body text-secondary">Mon - Sun</p>
+                            </div>
+                        </div>
+                        </Link>
+                        {/* Book Table Button */}
+                        <button className="bg-bookTableBg w-full max-w-[520px] p-4 sm:p-5 rounded-2xl">
+                            <p className="text-[14px] sm:text-[16px] text-bookTableText font-body flex items-start">
+                                Book a Table
+                            </p>
+                        </button>
+
+                        {/* Info Card */}
+                        <div className="w-full max-w-[520px] h-auto bg-infoCardBg rounded-xl p-4 sm:p-8">
+                            <div className="flex flex-col gap-4 sm:gap-8">
+
+                                {/* Opening Hours */}
+                                <div>
+                                    <p className="text-infocardText/60 text-[12px] sm:text-[14px] font-body">
+                                        Opening Hours
+                                    </p>
+                                    <div className="flex justify-between mt-1">
+                                        <p className="text-[14px] sm:text-[15px] font-body text-secondary">Mon - Sun</p>
+                                        <p className="text-[14px] sm:text-[15px] font-body text-secondary">
+                                            4:00 PM - 2:00 AM
+                                        </p>
+                                    </div>
+                                </div>
+
+                                {/* Contact */}
+                                <div>
+                                    <p className="text-infocardText/60 text-[12px] sm:text-[14px] font-body">
+                                        Contact #
+                                    </p>
                                     <p className="text-[14px] sm:text-[15px] font-body text-secondary">
-                                        4:00 PM - 2:00 AM
+                                        +1 905-459-5559
                                     </p>
                                 </div>
-                            </div>
 
-                            {/* Contact */}
-                            <div>
-                                <p className="text-infocardText/60 text-[12px] sm:text-[14px] font-body">
-                                    Contact #
-                                </p>
-                                <p className="text-[14px] sm:text-[15px] font-body text-secondary">
-                                    +1 905-459-5559
-                                </p>
-                            </div>
+                                {/* Location */}
+                                <div>
+                                    <p className="text-infocardText/60 text-[12px] sm:text-[14px] font-body">
+                                        Location
+                                    </p>
+                                    <p className="text-[14px] sm:text-[15px] font-body text-secondary">
+                                        378 Queen St E, Brampton, ON L6V 1C3, Canada
+                                    </p>
+                                </div>
 
-                            {/* Location */}
-                            <div>
-                                <p className="text-infocardText/60 text-[12px] sm:text-[14px] font-body">
-                                    Location
-                                </p>
-                                <p className="text-[14px] sm:text-[15px] font-body text-secondary">
-                                    378 Queen St E, Brampton, ON L6V 1C3, Canada
-                                </p>
                             </div>
-
                         </div>
-                    </div>
 
                 </div>
             </div>
