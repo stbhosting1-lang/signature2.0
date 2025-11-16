@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import heroImg from "../../../public/menu.webp"
+import heroImg from "../../../public/menu.jpg"
 import streetIcon from "../../../public/streeticon.svg"
 import mexicanIcon from "../../../public/mexican.svg"
 import loveIcon from "../../../public/firstlove.svg"
@@ -18,7 +18,7 @@ const page = () => {
             category: "From The Streets",
             Icon: streetIcon,
             items: [
-                { name: "PANI PURI PARADISE", desc: "Crispy puri shell filled with 3 flavors of water", price: "$10" },
+                { name: "PANI PURI PARADISE", desc: "Crispy puri shell filled with 2 flavors of water", price: "$10" },
                 { name: "SEV PURI SENSATION", desc: "Crunchy wafer topped with mashed potatoes, chutney, onion and cilantro", price: "$11" },
                 { name: "SWEET CORN CHAAT BITES", desc: "Sweet corn stuffed tart with chopped onion & pomegranate", price: "$11" },
                 { name: "SPICY POTATO CRAVING", desc: "Crispy potato patties with tangy chutney, sweet yogurt & thin sev", price: "$11" },
@@ -32,10 +32,8 @@ const page = () => {
             category: "Desi Mexican",
             Icon: mexicanIcon,
             items: [
-                { name: "CHICKEN QUESADILLA", desc: "Grilled tortilla filled with spiced chicken and melted cheese, sliced into wedges", price: "$16" },
                 { name: "DESI NACHOS FIESTA (PANEER/CHICKEN)", desc: "Tortilla chips topped with shahi paneer or butter chicken, cheese and flavorful toppings", price: "$16" },
-                { name: "Crispy paneer taco", desc: "Soft taco filled with paneer, vegetables and chutney", price: "$16" },
-                { name: "Chicken tikka tostada", desc: "Crispy base topped with smoky chicken tikka, fresh vegetables and chutneys", price: "$16" },
+                { name: "paneer taco", desc: "Soft taco filled with paneer, vegetables and chutney", price: "$16" },
             ],
             note: (<>
                 We have <span className='underline'> Jain</span> and <span className='underline'>Vegan options</span> available - please ask your server.
@@ -45,9 +43,9 @@ const page = () => {
             category: "The Fresh Chapter",
             items: [
                 { name: "Mango, cucumber, carrot salad", desc: "Julienne raw mango, cucumber & carrot tossed in a tangy sauce", price: "$15" },
-                { name: "Caesar salad (veg/chicken)", desc: "Romaine lettuce, cherry tomato tossed in creamy caesar dressing topped with croutons & parmesan cheese", price: "$15/16" },
+                { name: "Indian garden Salad 15 ", desc: "A crisp mix of seasonal fresh veggies,  lightly spiced and topped with a zestylemon twist", price: "$15/16" },
                 { name: "Quinoa salad", desc: "Romaine lettuce, cherry tomato tossed in creamy caesar dressing topped with", price: "$15" },
-                { name: "Cajun chicken salad", desc: "Grilled cajun spiced chicken, crisp green, juicy tomato tossed in zesty", price: "$16" },
+                { name: "Cajun chicken salad", desc: "Grilled Cajun-spiced chicken over crispgreens and juicy tomatoes, finished witha vibrant Creole lime vinaigrette", price: "$16" },
             ],
             note: (<>
                 We have <span className='underline'> Jain</span> and <span className='underline'>Vegan options</span> available - please ask your server.
@@ -64,7 +62,7 @@ const page = () => {
                 { name: "Tandoori achari paneer", desc: "Stuffed paneer cubes marinated in traditional pickling spices and grilled to smoky perfection", price: "$18" },
                 { name: "Pao bhaji fingers", desc: "Spicy mashed vegetables cooked with butter and tomato served with mini bread sticks", price: "$15" },
                 { name: "Paneer 65", desc: "Crispy spiced cubes of cottage cheese tossed with curry leaf and spices, served on bed of malabar parantha", price: "$17" },
-                { name: "Veggie royalty burger", desc: "Indian twist on classic burger potato patty topped with cottage cheese slice and in-house sauce served with fries", price: "$16" },
+                { name: "Veggie royalty burger", desc: "eggie royalty sliders 16Indian twist on classic sliders, potatopatty topped with cottage cheese sliceand in-house sauce served with fries", price: "$16" },
                 { name: "Achari soya bites", desc: "Spicy pickle flavoured soya chaap grilled to perfection", price: "$17" },
                 { name: "Croissant vada", desc: "A fusion snack combining crispy vada inside a buttery croissant, offering a delightful blend of textures", price: "$15" },
                 { name: "Malai cheese burst chaaр", desc: "Juicy chaap pieces stuffed with a creamy cheese filling topped with a layer of melted cheese for a luscious bite", price: "$18" },
@@ -74,11 +72,11 @@ const page = () => {
             </>)
         },
         {
-            category: "Bold Affair (NON VEG APPETIZERS)",
+            category: "Bold Affair",
             items: [
                 { name: "Muglai chicken tikka", desc: "Juicy chicken marinated with saffron & aromatic spices, grilled to perfection for a fragrant flavor", price: "$21" },
                 { name: "Bhatti chicken tikka", desc: "Tandoor grilled chicken cooked with hint of lemon juice & mustard oil", price: "$19" },
-                { name: "Malai chicken tikka", desc: "Chicken pieces marinated in a rich blend of cream, cheese and green chillies", price: "$20" },
+                // { name: "Malai chicken tikka", desc: "Chicken pieces marinated in a rich blend of cream, cheese and green chillies", price: "$20" },
                 { name: "Tandoori chicken", desc: "Classic marinated bone-in chicken cooked in tandoor, offering smoky flavor with a tender bite", price: "$18" },
                 { name: "Ajwaini pomfret", desc: "Pomfret fish marinated with carrom seed and mustard oil, grilled to perfection & finished with hint of lemon", price: "$26" },
                 { name: "king prawn with honey yogurt", desc: "Prawn marinated with kaffir lime leaves, grilled to perfection and served with honey yogurt dip", price: "$26" },
@@ -94,121 +92,7 @@ const page = () => {
                 We have <span className='underline'> Jain</span> and <span className='underline'>Vegan options</span> available - please ask your server.
             </>)
         },
-        {
-            category: "The Veg Story (VEG MAINS)",
-            Icon: vegstory,
-            items: [
-                { name: "Purani delhi dal makhani", desc: "Black lentil cooked for 24 hours on slow heat, finished with butter and cream", price: "$19" },
-                { name: "Methi malai paneer", desc: "Cottage cheese cooked in a creamy gravy finished with fresh fenugreek leaves", price: "$20" },
-                { name: "Paneer tikka masala", desc: "Tandoor cooked paneer in spicy thick masala finalised with cilantro & cream", price: "$20" },
-                { name: "Burrata makhani (gold dust)", desc: "Burrata cheese in rich tomato sauce", price: "$22" },
-                { name: "Ghee dal tadka", desc: "Yellow lentil tempered with garlic and cumin, finished with ghee", price: "$18" },
-                { name: "Tawa soya chaap", desc: "Chunks of soya chaap cooked with onion and bell peppers", price: "$19" },
-                { name: "Navratan korma", desc: "Selection of choicest seasonal vegetables cooked in cashew gravy finished with makhana", price: "$20" },
-                { name: "Paneer lababdar", desc: "Cubes of paneer in rich velvety gravy", price: "$20" },
-                { name: "Mango bhindi masala", desc: "Fresh okra tossed with onion, tomatoes and raw mango", price: "$19" },
-                { name: "Paneer pasanda", desc: "Paneer stuffed with nuts cooked in a mild rich gravy", price: "$20" },
-                { name: "Shahi paneer", desc: "Paneer in a buttery tomato gravy", price: "$20" },
-                { name: "Stuffed malai kofta", desc: "Stuffed balls of paneer in saffron infused gravy", price: "$22" },
-                { name: "Lasooni palak burrata", desc: "Burrata cheese in fresh spinach purée", price: "$22" },
-                { name: "Soya tikka masala", desc: "Tandoor grilled soya chaap in a spicy thick gravy", price: "$19" },
-                { name: "Palak khumb masala", desc: "Mushroom tempered with garlic and tossed in spinach purée", price: "$19" },
-                { name: "Veg jalfrezi", desc: "Seasonal vegetables in a zesty herb gravy", price: "$19" },
-            ],
-            note: (<>
-                We have <span className='underline'> Jain</span> and <span className='underline'>Vegan options</span> available - please ask your server.
-            </>)
-        },
-        {
-            category: "The Main Affair (NON VEG MAINS)",
-            Icon: affair,
-            items: [
-                {
-                    name: "GOLD BUTTER CHICKEN",
-                    desc: "Tandoor cooked chicken in creamy tomato gravy finished with gold dust",
-                    price: "$22"
-                },
-                {
-                    name: "CHICKEN TIKKA MASALA",
-                    desc: "Tandoor cooked chicken in spicy onion tomato masala",
-                    price: "$22"
-                },
-                {
-                    name: "KALI MIRCH CHICKEN",
-                    desc: "Black pepper spiced chicken in a rich cashew gravy",
-                    price: "$22"
-                },
-                {
-                    name: "BHUNA CHICKEN",
-                    desc: "Dry flavourful chicken cooked with spices and tomato",
-                    price: "$22"
-                },
-                {
-                    name: "ROYAL KIPTI MURG",
-                    desc: "Flavourful chicken wrapped in fluffy egg served with spicy spinach puree and mild tomato sauce",
-                    price: "$22"
-                },
-                {
-                    name: "SIGNATURE CHICKEN CURRY",
-                    desc: "Boneless chicken cooked with tomato and signature's special spices",
-                    price: "$20"
-                },
-                {
-                    name: "KASHMIRI LAMB ROGANJOSH",
-                    desc: "Tender pieces of lamb in vibrant red curry finished with garam masala",
-                    price: "$22"
-                },
-                {
-                    name: "NALLI ROGANJOSH",
-                    desc: "Slow cooked lamb in thick gravy",
-                    price: "$30"
-                },
-                {
-                    name: "LASOONI KARAHI CHICKEN",
-                    desc: "Boneless chicken in onion tomato gravy tossed with onion, pepper and garlic",
-                    price: "$22"
-                },
-                {
-                    name: "SPICY CHICKEN KOFTA",
-                    desc: "Minced chicken mixed with spices in a smooth spicy gravy",
-                    "price": "$22"
-                },
-                {
-                    name: "CHICKEN KORMA",
-                    desc: "Mild aromatic chicken curry with cashew nuts finished with cream",
-                    price: "$21"
-                },
-                {
-                    name: "MURGH DO PYAZA",
-                    desc: "Marinated chicken cooked with cashew and blend of spices",
-                    price: "$22"
-                },
-                {
-                    name: "LASOONI PALAK BURRATA",
-                    desc: "Burrata cheese in fresh spinach puree",
-                    price: "$22"
-                },
-                {
-                    name: "HANDI LAMB",
-                    desc: "Slow cooked lamb in a spicy aromatic gravy",
-                    price: "$23"
-                },
-                {
-                    name: "LAMB BHUNA",
-                    desc: "Slow cooked lamb in thick gravy",
-                    price: "$23"
-                },
-                {
-                    name: "COCONUT SHRIMP CURRY",
-                    desc: "Marinated shrimp cooked in a rich creamy coconut-based gravy",
-                    price: "$22"
-                }
-            ],
-            note: (<>
-                We have <span className='underline'> Jain</span> and <span className='underline'>Vegan options</span> available - please ask your server.
-            </>)
-        },
-        {
+         {
             category: "The Wok Story (INDO-CHINESE)",
             Icon: wok,
             items: [
@@ -247,11 +131,11 @@ const page = () => {
                     desc: "Penne pasta tossed in a rich creamy garlic sauce & loaded with fresh vegetables",
                     price: "$22"
                 },
-                {
-                    name: "SCHEZWAN NOODLES (VEG/CHICKEN)",
-                    desc: "Spicy noodles cooked with schezwan sauce, vegetables and seasoning",
-                    price: "$16/$18"
-                },
+                // {
+                //     name: "SCHEZWAN NOODLES (VEG/CHICKEN)",
+                //     desc: "Spicy noodles cooked with schezwan sauce, vegetables and seasoning",
+                //     price: "$16/$18"
+                // },
                 {
                     name: "TANGY CHILLI CHICKEN",
                     desc: "Sweet and spicy chicken in a tangy chilly sauce",
@@ -283,6 +167,119 @@ const page = () => {
             </>)
         },
         {
+            category: "The Veg Story (VEG MAINS)",
+            Icon: vegstory,
+            items: [
+                { name: "Purani delhi dal makhani", desc: "Black lentil cooked for 24 hours on slow heat, finished with butter and cream", price: "$19" },
+                { name: "Methi malai paneer", desc: "Cottage cheese cooked in a creamy gravy finished with fresh fenugreek leaves", price: "$20" },
+                { name: "Paneer tikka masala", desc: "Tandoor cooked paneer in spicy thick masala finalised with cilantro & cream", price: "$20" },
+                { name: "Adraki kadahi paneer", desc: "Paneer in onion and tomato-based gravytossed with chef's secret spices", price: "$20" },
+                { name: "Burrata makhani (gold dust)", desc: "Burrata cheese in rich tomato sauce", price: "$22" },
+                { name: "Diwani Handi", desc: "mushrooms simmered in a flavorful andcreamy sauce of onions, tomatoes, and a blend of aromatic spices", price: "$19" },
+                { name: "Ghee dal tadka", desc: "Yellow lentil tempered with garlic and cumin, finished with ghee", price: "$18" },
+                { name: "Tawa soya chaap", desc: "Chunks of soya chaap cooked with onion and bell peppers", price: "$19" },
+                { name: "Navratan korma", desc: "Selection of choicest seasonal vegetables cooked in cashew gravy toped with makhana and nuts", price: "$20" },
+                { name: "Paneer lababdar", desc: "Cubes of paneer in rich velvety gravy", price: "$20" },
+                { name: "Mango bhindi masala", desc: "Fresh okra tossed with onion, tomatoes and raw mango", price: "$19" },
+                { name: "Paneer pasanda", desc: "Paneer stuffed with nuts cooked in a mild rich gravy", price: "$20" },
+                { name: "Shahi paneer", desc: "Paneer in a buttery tomato gravy", price: "$20" },
+                { name: "Stuffed malai kofta", desc: "Stuffed balls of paneer in saffron infused gravy", price: "$22" },
+                { name: "Lasooni palak burrata", desc: "Burrata cheese in fresh spinach purée", price: "$22" },
+                { name: "Soya tikka masala", desc: "Tandoor grilled soya chaap in a spicy thick gravy", price: "$19" },
+                // { name: "Palak khumb masala", desc: "Mushroom tempered with garlic and tossed in spinach purée", price: "$19" },
+                { name: "Veg jalfrezi", desc: "Seasonal vegetables in a zesty herb gravy", price: "$19" },
+            ],
+            note: (<>
+                We have <span className='underline'> Jain</span> and <span className='underline'>Vegan options</span> available - please ask your server.
+            </>)
+        },
+        {
+            category: "The Main Affair (NON VEG MAINS)",
+            Icon: affair,
+            items: [
+                {
+                    name: "GOLD BUTTER CHICKEN",
+                    desc: "Tandoor cooked chicken in creamy tomato gravy finished with gold dust",
+                    price: "$22"
+                },
+                {
+                    name: "CHICKEN TIKKA MASALA",
+                    desc: "Tandoor cooked chicken in spicy onion tomato masala",
+                    price: "$22"
+                },
+                {
+                    name: "KALI MIRCH CHICKEN",
+                    desc: "Black pepper spiced chicken in a rich cashew gravy",
+                    price: "$22"
+                },
+                {
+                    name: "BHUNA CHICKEN",
+                    desc: "Dry flavourful chicken cooked with spices and tomato",
+                    price: "$22"
+                },
+                // {
+                //     name: "ROYAL KIPTI MURG",
+                //     desc: "Flavourful chicken wrapped in fluffy egg served with spicy spinach puree and mild tomato sauce",
+                //     price: "$22"
+                // },
+                {
+                    name: "SIGNATURE CHICKEN CURRY",
+                    desc: "Boneless chicken cooked with tomato and signature's special spices",
+                    price: "$20"
+                },
+                {
+                    name: "KASHMIRI LAMB ROGANJOSH",
+                    desc: "Tender pieces of lamb in vibrant red curry finished with garam masala",
+                    price: "$22"
+                },
+                {
+                    name: "Nawabi lamb shank",
+                    desc: "Slow cooked lamb in smooth Nutmegflavoured gravy",
+                    price: "$30"
+                },
+                {
+                    name: "LASOONI KARAHI CHICKEN",
+                    desc: "Boneless chicken in onion tomato gravy tossed with onion, pepper and garlic",
+                    price: "$22"
+                },
+                {
+                    name: "SPICY CHICKEN KOFTA",
+                    desc: "Minced chicken mixed with spices in a smooth spicy gravy",
+                    "price": "$22"
+                },
+                {
+                    name: "CHICKEN KORMA",
+                    desc: "Mild aromatic chicken curry with cashew nuts finished with cream",
+                    price: "$21"
+                },
+                {
+                    name: "MURGH DO PYAZA",
+                    desc: "Marinated chicken cooked with cashew and blend of spices",
+                    price: "$22"
+                },
+                {
+                    name: "LASOONI PALAK BURRATA",
+                    desc: "Burrata cheese in fresh spinach puree",
+                    price: "$22"
+                },
+               
+                {
+                    name: "LAMB BHUNA",
+                    desc: "Slow cooked lamb in thick gravy",
+                    price: "$23"
+                },
+                {
+                    name: "COCONUT SHRIMP CURRY",
+                    desc: "Marinated shrimp cooked in a rich creamy coconut-based gravy",
+                    price: "$22"
+                }
+            ],
+            note: (<>
+                We have <span className='underline'> Jain</span> and <span className='underline'>Vegan options</span> available - please ask your server.
+            </>)
+        },
+       
+        {
             category: "Perfect Companions (SIDES)",
             items: [
                 {
@@ -292,10 +289,6 @@ const page = () => {
                 {
                     name: "LACCHA PYAAZ",
                     price: "$5"
-                },
-                {
-                    name: "INDIAN GARDEN SALAD",
-                    price: "$8"
                 },
                 {
                     name: "RAITA",
@@ -327,8 +320,8 @@ const page = () => {
                     price: "$18"
                 },
                 {
-                    name: "CHICKEN SHAWARMA BIRYANI",
-                    desc: "Shawarma spiced chicken with Indian twist, fluffy basmati rice and aromatic spices",
+                    name: "CHICKEN MASTI BIRYANI",
+                    desc: "low cooked chicken,fluffy basmati rice and aromatic spices",
                     price: "$20"
                 },
                 {
@@ -385,7 +378,7 @@ const page = () => {
             items: [
                 {
                     name: "RUMALI ROTI",
-                    price: "$9"
+                    price: "$7"
                 },
                 {
                     name: "NAAN (PLAIN/BUTTER/GARLIC)",
@@ -398,7 +391,7 @@ const page = () => {
                 },
                 {
                     name: "CHUR CHUR NAAN",
-                    price: "$6"
+                    price: "$7"
                 },
                 {
                     name: "ROTI (PLAIN/BUTTER)",
@@ -415,45 +408,45 @@ const page = () => {
             Icon: sweetIcon,
             items: [
                 {
-                    name: "GULAB JAMUN KUNAFA",
-                    desc: "Classic Indian dessert with a modern twist",
+                    name: "Creamy dream cheese cake",
+                    desc: "Indulge in the velvety smoothness of ourCreamy Dream Cheesecake, a heavenlydessert that melts in your mouth",
+                    price: "$12"
+                },
+                {
+                    name: "Gulab jamun kunafa",
+                    desc: "Classic Indian dessert with a moderntwist",
                     price: "$9"
                 },
                 {
-                    name: "MANGO LASSI PANNA COTTA",
-                    desc: "Creamy panna cotta infused with fresh mango puree topped with fresh mango chunks",
+                    name: "Pistachio milk, cake",
+                    desc: "A buttery, moist crumb infused with finelyground pistachios, balanced by a subtle hint ofrose water",
                     price: "$12"
                 },
                 {
-                    name: "RASMALAI CHEESE CAKE",
-                    desc: "A delightful blend of Indian rasmalai and creamy cheesecake with cardamom spiced sweetness in every bite",
+                    name: "Lava cake",
+                    desc: "Rich indulgent treat with molten chocolatecore encased in soft fluffy cake, servedwith vanilla ice cream",
                     price: "$12"
                 },
                 {
-                    name: "KHEER BRULEE",
-                    desc: "A decadent fusion of creamy rice pudding base infused with saffron, topped with caramelized sugar crust",
-                    price: "$12"
-                },
-                {
-                    name: "MANGO CHEESE CAKE",
-                    desc: "Mango flavoured creamy cheesecake served with mango sauce and fresh fruits",
-                    price: "$12"
-                },
-                {
-                    name: "SIZZLING CHOCOLATE BROWNIE",
-                    desc: "Experience the ultimate treat with our sizzling chocolate brownie served piping hot with melting",
-                    price: "$15"
-                },
-                {
-                    name: "LAVA CAKE",
-                    desc: "Rich indulgent treat with molten chocolate core encased in soft fluffy cake, served with vanilla ice cream",
-                    price: "$12"
-                },
-                {
-                    name: "GAJAR HALWA RED VELVET CAKE",
-                    desc: "A vibrant fusion of red velvet cake with carrot, spices and cream cheese blending in perfect harmony",
+                    name: "Signature's Biscoff Tresleche(Our Signature Dessert)",
+                    desc: "An indulgent twist on the timeless Tres Leches cake - this masterpiece features a soft, airy sponge soaked in three luxurious milks, delicately infused with the rich, caramelized essence of Biscoff. Each bite melts in your mouth, layered with velvety Biscoffcream and crowned with a smooth whipped topping. Finished with a golden Biscoffcrumble for a touch of crunch, this dessert defines Signature's artistry in every spoon",
                     price: "$14"
-                }
+                },
+                // {
+                //     name: "SIZZLING CHOCOLATE BROWNIE",
+                //     desc: "Experience the ultimate treat with our sizzling chocolate brownie served piping hot with melting",
+                //     price: "$15"
+                // },
+                // {
+                //     name: "LAVA CAKE",
+                //     desc: "Rich indulgent treat with molten chocolate core encased in soft fluffy cake, served with vanilla ice cream",
+                //     price: "$12"
+                // },
+                // {
+                //     name: "GAJAR HALWA RED VELVET CAKE",
+                //     desc: "A vibrant fusion of red velvet cake with carrot, spices and cream cheese blending in perfect harmony",
+                //     price: "$14"
+                // }
             ],
             note: (<>
                 We have <span className='underline'> Jain</span> and <span className='underline'>Vegan options</span> available - please ask your server.

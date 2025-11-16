@@ -29,14 +29,25 @@ const page = () => {
 
                     {/* Contact Info Card */}
                     <div className='w-full max-w-[700px] border-aboutCardBorder border bg-aboutCardBorder/5 rounded-lg p-4 flex flex-col gap-5'>
-                        <h3 className='text-[24px] sm:text-[22px] font-heading italic text-aboutCardHeading'>Contact Info</h3>
-                        <Image
-                            src={addressImg}
-                            alt='addressImg'
-                            className='w-full h-auto'
-                            priority
-                        />
+                        <h3 className='text-[24px] sm:text-[22px] font-heading italic text-aboutCardHeading'>
+                            Contact Info
+                        </h3>
+
+                        <a
+                            href="https://share.google/aVoHTrBu7GD0q7O33"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="w-full h-auto block"
+                        >
+                            <Image
+                                src={addressImg}
+                                alt='addressImg'
+                                className='w-full h-auto cursor-pointer'
+                                priority
+                            />
+                        </a>
                     </div>
+
 
                     {/* Info Card */}
                     <div className="w-full max-w-[700px] h-auto bg-infoCardBg rounded-xl p-6 sm:p-8">
