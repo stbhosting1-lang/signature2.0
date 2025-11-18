@@ -20,6 +20,7 @@ const NewMenu = () => {
 
         { Image: updatemenuhead },
         { Image: updatemenuhead2 },
+        { Image: updatemenu9 },
         { Image: updatemenu1 },
         { Image: updatemenu2 },
         { Image: updatemenu3 },
@@ -28,7 +29,6 @@ const NewMenu = () => {
         { Image: updatemenu6 },
         { Image: updatemenu7 },
         { Image: updatemenu8 },
-        { Image: updatemenu9 },
         { Image: updatemenufooter },
 
     ]
