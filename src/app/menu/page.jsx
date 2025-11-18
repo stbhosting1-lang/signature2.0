@@ -10,7 +10,8 @@ const Page = () => {
 
         {/* Hero Image */}
         <div className="relative w-full h-[400px] sm:h-[450px] md:h-[550px] lg:h-[650px] xl:h-[800px] xl:w-[560px] 2xl:w-[1100px] 
-                        xl:fixed xl:top-5 overflow-hidden">
+                        xl:fixed xl:top-5
+                         overflow-hidden">
           <Image
             src={heroImg}
             alt="Signature menu"
