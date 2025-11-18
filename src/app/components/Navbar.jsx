@@ -2,11 +2,13 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation"; // To get current path
 import logo from "../../../public/logo.svg"; // Your logo
 import { HiOutlineMenu, HiOutlineX } from "react-icons/hi";
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const pathname = usePathname(); // current route
 
   const navLinks = [
     { name: "Home", path: "/" },
@@ -15,9 +17,12 @@ const Navbar = () => {
     { name: "Contact", path: "/contact" },
   ];
 
+  // Make navbar fixed only on /menu page
+  const navbarPosition = pathname === "/menu" ? "fixed top-0 left-0 w-full z-50" : "absolute top-2 left-2 w-full z-50";
+
   return (
-    <nav className="absolute top-2 left-2 w-full z-50">
-      <div className=" w-[50%] md:w-[420px] h-[50px] flex items-center gap-5 p-6 bg-background rounded-tl-[80px] rounded-br-[100px] rounded-bl-[-80px]">
+    <nav className={navbarPosition}>
+      <div className="w-[50%] md:w-[420px] h-[50px] flex items-center gap-5 p-6 bg-background rounded-tl-[80px] rounded-br-[100px] rounded-bl-[-80px]">
         {/* Logo */}
         <Link href="/">
           <div className="flex items-center space-x-2">
@@ -37,7 +42,6 @@ const Navbar = () => {
             </Link>
           ))}
         </div>
-        
 
         {/* Mobile Menu Button */}
         <div className="md:hidden">
