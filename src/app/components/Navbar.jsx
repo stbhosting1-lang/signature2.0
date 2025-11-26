@@ -18,7 +18,10 @@ const Navbar = () => {
   ];
 
   // Make navbar fixed only on /menu page
-  const navbarPosition = pathname === "/menu" ? "fixed top-0 left-0 w-full z-50" : "absolute top-2 left-2 w-full z-50";
+  const navbarPosition =
+    pathname === "/menu" || pathname === "/drinks-menu"
+      ? "fixed top-0 left-0 w-full z-50"
+      : "absolute top-2 left-2 w-full z-50";
 
   return (
     <nav className={navbarPosition}>

@@ -194,15 +194,6 @@ const page = () => {
                 {/* ================= RIGHT CONTENT COLUMN ================= */}
                 <div className="flex flex-col gap-6 items-center lg:items-end">
 
-                    <div className='w-full max-w-[700px] border-aboutCardBorder border bg-aboutCardBorder/5 p-4 rounded-xl flex flex-col lg:flex-row justify-between gap-5 lg:items-center'>
-                        <h3 className='text-[24px] font-heading italic text-aboutCardHeading'>Explore Our Drinks menu</h3>
-                        <Link href="/drinks-menu" className="block">
-                            <button className='bg-background px-4 py-2 border-aboutCardHeading border rounded-lg w-[150px]'>
-                                <p className='text-[16px] text-aboutCardHeading font-body'>Drinks Menu</p>
-                            </button>
-                        </Link>
-                    </div>
-
                     {/* History Card */}
                     <div className="w-full max-w-[700px] border-aboutCardBorder border bg-aboutCardBorder/5 p-4 rounded-xl">
                         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-3">
