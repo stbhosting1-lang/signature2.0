@@ -13,19 +13,6 @@ import drinkmenu7 from "../../../public/SignatureDrinkMenu9.webp"
 import drinkmenu8 from "../../../public/SignatureDrinkMenu10.webp"
 import drinkmenu9 from "../../../public/SignatureDrinkMenu11.webp"
 import drinkmenufooter from "../../../public/SignatureDrinkMenu12.webp"
-
-export const metadata = {
-    title: "Drinks Menu | Signature Restaurant",
-    description: "Explore the exclusive drinks menu at Signature Restaurant, featuring handcrafted cocktails, premium beverages, and refreshing non-alcoholic options. Perfectly paired with our culinary delights for an unforgettable dining experience in Brampton.",
-    keywords: [
-        "Signature Restaurant Drinks Menu",
-        "Cocktails Brampton",
-        "Non-alcoholic Beverages",
-        "Premium Drinks Brampton",
-        "Indian Restaurant Drinks",
-        "Fine Dining Drinks"
-    ],
-};
 const NewMenu = () => {
 
     const menuCards = [

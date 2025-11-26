@@ -2,7 +2,19 @@ import React from 'react'
 import Image from 'next/image'
 import heroImg from "../../../public/drinkmenuhero.jpg"
 import Drinks from "./Drinks"
-import Link from 'next/link'
+
+export const metadata = {
+    title: "Drinks Menu | Signature Restaurant",
+    description: "Explore the exclusive drinks menu at Signature Restaurant, featuring handcrafted cocktails, premium beverages, and refreshing non-alcoholic options. Perfectly paired with our culinary delights for an unforgettable dining experience in Brampton.",
+    keywords: [
+        "Signature Restaurant Drinks Menu",
+        "Cocktails Brampton",
+        "Non-alcoholic Beverages",
+        "Premium Drinks Brampton",
+        "Indian Restaurant Drinks",
+        "Fine Dining Drinks"
+    ],
+};
 const page = () => {
     return (
         <>
