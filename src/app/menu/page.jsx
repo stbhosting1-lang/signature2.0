@@ -1,8 +1,13 @@
+export const dynamic = "force-static";
 import React from "react";
 import Image from "next/image";
 import heroImg from "../../../public/menu.jpg";
 import NewMenu from "./components/NewMenu";
 
+
+export const metadata = {
+    title: "Menu",
+};
 const Page = () => {
   return (
     <div className="w-full bg-background py-5 px-4">
@@ -25,6 +30,8 @@ const Page = () => {
         <div className="xl:ml-[560px] 2xl:ml-[1100px] mt-10 xl:mt-0 px-4 xl:px-6">
           <NewMenu />
         </div>
+
+
 
       </div>
     </div>

@@ -1,3 +1,4 @@
+export const dynamic = "force-static";
 import React from 'react'
 import Image from 'next/image'
 import heroImg from "../../../public/contact.webp"
@@ -6,6 +7,9 @@ import clockIcon from "../../../public/time.svg"
 import phoneIcon from "../../../public/mobile.svg"
 import addressIcon from "../../../public/maps.svg"
 
+export const metadata = {
+    title: "Contact Us",
+};
 const page = () => {
     return (
         <div className="w-full bg-background py-5 overflow-x-hidden">

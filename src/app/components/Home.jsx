@@ -1,4 +1,4 @@
-"use client";
+export const dynamic = "force-static";
 import Image from "next/image";
 import heroImg from "../../../public/hero.jpg";
 import menu from "../../../public/homemenu.jpg";
@@ -6,6 +6,7 @@ import Location from "../../../public/location.jpg";
 import google from "../../../public/facebook.svg";
 import Insta from "../../../public/instagram.svg";
 import Link from "next/link";
+
 const HomeSection = () => {
     return (
         <div className="w-full bg-background py-5 overflow-x-hidden">

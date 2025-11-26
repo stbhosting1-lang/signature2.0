@@ -2,19 +2,20 @@ import Navbar from "./components/Navbar";
 import "./globals.css";
 
 export const metadata = {
-  title: 'Signature Restaurant',
+  title: {
+    default: "Signature Restaurant",
+    template: "%s - Signature Restaurant"
+  },
   description: 'Indian Elegance on Every Plate',
   openGraph: {
     title: 'Signature Restaurant',
     description: 'Indian Elegance on Every Plate',
     url: 'https://signature.punjabland.ca',
-    images: ['/logo.svg'],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Signature Restaurant',
     description: 'Indian Elegance on Every Plate',
-    images: ['/logo.svg'],
   },
 };
 

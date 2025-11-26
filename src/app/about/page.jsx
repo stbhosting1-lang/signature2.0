@@ -1,22 +1,9 @@
-"use client"
+export const dynamic = "force-static";
 import React from 'react'
 import Image from 'next/image'
 import aboutImg from "../../../public/About.webp"
 import history from "../../../public/history&goal.webp"
 import Food from "../../../public/food.svg"
-import Restaurant from "../../../public/Restaurent.jpg";
-import Restaurant1 from "../../../public/Restaurent1.jpg";
-import Restaurant2 from "../../../public/Restaurent2.jpg";
-import Restaurant3 from "../../../public/Restaurent3.jpg";
-import Restaurant4 from "../../../public/Restaurent4.jpg";
-import Restaurant5 from "../../../public/Restaurent5.jpg";
-import Restaurant6 from "../../../public/Restaurent6.jpg";
-import Restaurant7 from "../../../public/Restaurent7.jpg";
-import Restaurant8 from "../../../public/Restaurent8.jpg";
-import Restaurant9 from "../../../public/Restaurent9.jpg";
-import Restaurant10 from "../../../public/Restaurent10.jpg";
-import Restaurant11 from "../../../public/Restaurent11.jpg";
-import Restaurant12 from "../../../public/Restaurent12.jpg";
 import StarIcon from "../../../public/stars.svg"
 import foodItem from "../../../public/fooditem.webp"
 import vivek from "../../../public/Vivek.webp"
@@ -26,11 +13,13 @@ import googleIcon from "../../../public/GoogleLogo.svg"
 import reviewStar from "../../../public/yellowstar.svg"
 import DarkGoogleIcon from "../../../public/redfacebook.svg"
 import DarkInstaIcon from "../../../public/redinsta.svg"
-// Add at the top with other imports
-import { useState } from "react";
-import { ChevronRight } from "lucide-react";
 import Link from 'next/link'
+import Slider from './components/Slider'
 
+
+export const metadata = {
+    title: "About",
+};
 
 const page = () => {
 
@@ -120,29 +109,6 @@ const page = () => {
         },
     ];
 
-    const restaurantImages = [
-        Restaurant,
-        Restaurant1,
-        Restaurant2,
-        Restaurant3,
-        Restaurant4,
-        Restaurant5,
-        Restaurant6,
-        Restaurant7,
-        Restaurant8,
-        Restaurant9,
-        Restaurant10,
-        Restaurant11,
-        Restaurant12,
-    ];
-    const [currentIndex, setCurrentIndex] = useState(0);
-
-    const handleNext = () => {
-        setCurrentIndex((prev) =>
-            prev === restaurantImages.length - 1 ? 0 : prev + 1
-        );
-    };
-
 
     return (
         <div className="w-full bg-background py-3">
@@ -217,6 +183,15 @@ const page = () => {
                 {/* ================= RIGHT CONTENT COLUMN ================= */}
                 <div className="flex flex-col gap-6 items-center lg:items-end">
 
+                    <div className='w-full max-w-[700px] border-aboutCardBorder border bg-aboutCardBorder/5 p-4 rounded-xl flex flex-col lg:flex-row justify-between gap-5 lg:items-center'>
+                        <h3 className='text-[24px] font-heading italic text-aboutCardHeading'>Explore Our Drinks menu</h3>
+                        <Link href="/drinks-menu" className="block">
+                            <button className='bg-background px-4 py-2 border-aboutCardHeading border rounded-lg w-[150px]'>
+                                <p className='text-[16px] text-aboutCardHeading font-body'>Drinks Menu</p>
+                            </button>
+                        </Link>
+                    </div>
+
                     {/* History Card */}
                     <div className="w-full max-w-[700px] border-aboutCardBorder border bg-aboutCardBorder/5 p-4 rounded-xl">
                         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-3">
@@ -249,31 +224,7 @@ const page = () => {
                         </div>
 
                         <div className="relative w-full h-full rounded-xl overflow-hidden">
-
-                            {/* Slider Images */}
-                            <div
-                                className="flex transition-transform duration-700 ease-in-out"
-                                style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-                            >
-                                {restaurantImages.map((img, index) => (
-                                    <div key={index} className="min-w-full">
-                                        <Image
-                                            src={img}
-                                            alt={`Restaurant ${index + 1}`}
-                                            className="w-full rounded-xl h-[370px]"
-                                        />
-                                    </div>
-                                ))}
-                            </div>
-
-                            {/* Next Arrow Button */}
-                            <button
-                                onClick={handleNext}
-                                className="absolute right-3 top-1/2 -translate-y-1/2 bg-white/70 hover:bg-white text-black p-2 rounded-full shadow-md transition"
-                            >
-                                <ChevronRight size={20} />
-                            </button>
-
+                            <Slider />
                         </div>
 
                     </div>
