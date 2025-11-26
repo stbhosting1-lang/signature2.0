@@ -9,7 +9,17 @@ import addressIcon from "../../../public/maps.svg"
 
 export const metadata = {
     title: "Contact Us",
+    description: "Get in touch with Signature Restaurant in Brampton. Find our location, opening hours, phone number, and connect with us for reservations or inquiries.",
+    keywords: [
+        "Signature Restaurant contact",
+        "restaurant Brampton",
+        "contact number",
+        "restaurant location",
+        "reservation",
+        "customer support"
+    ],
 };
+
 const page = () => {
     return (
         <div className="w-full bg-background py-5 overflow-x-hidden">

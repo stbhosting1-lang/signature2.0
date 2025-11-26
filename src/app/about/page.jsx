@@ -19,7 +19,18 @@ import Slider from './components/Slider'
 
 export const metadata = {
     title: "About",
+    description: "Learn about Signature Restaurant, our journey from Punjab to Brampton, our culinary philosophy, and the passionate team behind our authentic Indian dining experience.",
+    keywords: [
+        "About Signature Restaurant",
+        "Indian cuisine Brampton",
+        "Punjabi restaurant",
+        "fine dining Indian food",
+        "restaurant team",
+        "culinary philosophy",
+        "authentic Indian food"
+    ],
 };
+
 
 const page = () => {
 
