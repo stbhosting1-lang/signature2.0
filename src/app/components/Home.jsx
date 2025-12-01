@@ -150,11 +150,19 @@ const HomeSection = () => {
                                 <p className="text-infocardText/60 text-[12px] sm:text-[14px] font-body">
                                     Opening Hours
                                 </p>
-                                <div className="flex justify-between mt-1">
-                                    <p className="text-[14px] sm:text-[15px] font-body text-secondary">Mon - Sun</p>
-                                    <p className="text-[14px] sm:text-[15px] font-body text-secondary">
-                                        4:00 PM - 2:00 AM
-                                    </p>
+                                <div className="flex  flex-col gap-2 mt-1">
+                                    <div className="flex justify-between">
+                                        <p className="text-[14px] sm:text-[15px] font-body text-secondary">Mon - Thu</p>
+                                        <p className="text-[14px] sm:text-[15px] font-body text-secondary">
+                                            4:00 PM - 2:00 AM
+                                        </p>
+                                    </div>
+                                    <div className="flex justify-between">
+                                        <p className="text-[14px] sm:text-[15px] font-body text-secondary">Fri - Sun</p>
+                                        <p className="text-[14px] sm:text-[15px] font-body text-secondary">
+                                            12:00 PM - 2:00 AM
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
 
