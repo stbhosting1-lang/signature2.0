@@ -11,6 +11,8 @@ const HomeSection = () => {
     return (
         <div className="w-full bg-background py-5 overflow-x-hidden">
 
+            {/* example change */}
+
             {/* GRID WRAPPER */}
             <div className="grid grid-cols-1 xl:grid-cols-2 gap-10 px-4 relative">
 
