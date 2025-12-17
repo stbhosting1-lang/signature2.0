@@ -5,17 +5,69 @@ import heroImg from "../../../public/menu.jpg";
 import NewMenu from "./components/NewMenu";
 import Link from "next/link";
 
+// ⭐ IMPROVED METADATA FOR MENU PAGE ⭐
 export const metadata = {
-  title: "Menu",
-  description: "Explore the Signature Restaurant menu, featuring authentic Indian dishes, fine-dining specialties, and a curated selection of drinks crafted for an exceptional culinary experience.",
+  // Basic SEO (Shows in Google & Browser)
+  title: "Menu - Signature by Punjabland | Indian Fine Dining Brampton",
+  description: "Explore the Signature by Punjabland menu in Brampton. Delicious Indian fine dining with handcrafted starters, mains, desserts and chef’s specials.",
   keywords: [
+    "Indian menu Brampton",
     "Signature Restaurant menu",
-    "Indian cuisine menu",
-    "fine dining menu",
-    "Indian dishes Brampton",
-    "authentic Indian food",
-    "restaurant drinks menu"
+    "Indian food menu",
+    "tandoori dishes",
+    "curry menu",
+    "biryani Brampton",
+    "naan bread",
+    "Indian appetizers",
+    "Indian desserts",
+    "vegetarian Indian food",
+    "halal menu Brampton",
+    "Indian restaurant menu prices"
   ],
+  
+  // OpenGraph (Facebook, LinkedIn, WhatsApp)
+  openGraph: {
+    title: "Signature by Punjabland - Indian Fine Dining Brampton",
+    description: "Explore the Signature by Punjabland menu in Brampton. Delicious Indian fine dining with handcrafted starters, mains, desserts and chef’s specials.",
+    url: "https://signature.punjabland.ca/menu",
+    siteName: "Signature Restaurant",
+    images: [
+      {
+        url: "https://signature.punjabland.ca/_next/static/media/homemenu.8493e32d.jpg", // Your hero image
+        width: 1200,
+        height: 630,
+        alt: "Signature Restaurant Indian menu dishes",
+      },
+    ],
+    locale: "en_CA",
+    type: "website",
+  },
+  
+  // Twitter Card
+  twitter: {
+    card: "summary_large_image",
+    title: "Signature by Punjabland - Indian Fine Dining Brampton",
+    description: "Explore the Signature by Punjabland menu in Brampton. Delicious Indian fine dining with handcrafted starters, mains, desserts and chef’s specials.",
+    images: ["https://signature.punjabland.ca/_next/static/media/homemenu.8493e32d.jpg"],
+  },
+  
+  // Canonical URL (Prevents duplicate content)
+  alternates: {
+    canonical: "https://signature.punjabland.ca/menu",
+  },
+  
+  // Robot Instructions
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 const Page = () => {
@@ -29,7 +81,7 @@ const Page = () => {
                          overflow-hidden">
           <Image
             src={heroImg}
-            alt="Signature menu"
+            alt="Signature by punjabland Restaurant authentic Indian menu with tandoori, curries, and traditional dishes"
             fill
             className="object-cover rounded-lg"
             priority
@@ -48,8 +100,6 @@ const Page = () => {
           </div>
           <NewMenu />
         </div>
-
-
 
       </div>
     </div>

@@ -7,17 +7,69 @@ import clockIcon from "../../../public/time.svg"
 import phoneIcon from "../../../public/mobile.svg"
 import addressIcon from "../../../public/maps.svg"
 
+// ⭐ OPTIMIZED METADATA FOR CONTACT PAGE ⭐
 export const metadata = {
-    title: "Contact Us",
-    description: "Get in touch with Signature Restaurant in Brampton. Find our location, opening hours, phone number, and connect with us for reservations or inquiries.",
+    // Basic SEO (Google & Browser)
+    title: "Contact Us - Signature by Punjabland | Indian Fine Dining Brampton",
+    description: "Get in touch with Signature by Punjabland in Brampton. Find our address, phone, hours and reservations info for premium Indian fine dining.",
     keywords: [
         "Signature Restaurant contact",
-        "restaurant Brampton",
-        "contact number",
-        "restaurant location",
-        "reservation",
-        "customer support"
+        "Brampton Indian restaurant contact",
+        "378 Queen St E Brampton",
+        "restaurant phone number Brampton",
+        "Signature Restaurant location",
+        "Brampton restaurant reservations",
+        "Indian restaurant hours Brampton",
+        "contact Indian restaurant",
+        "restaurant near me Brampton",
+        "book table Signature Restaurant",
+        "Indian restaurant Queen Street",
+        "Brampton dining reservations"
     ],
+    
+    // OpenGraph (Facebook, LinkedIn, WhatsApp)
+    openGraph: {
+        title: "Contact Signature Restaurant - Brampton Location",
+        description: "Get in touch with Signature by Punjabland in Brampton. Find our address, phone, hours and reservations info for premium Indian fine dining.",
+        url: "https://signature.punjabland.ca/contact",
+        siteName: "Signature Restaurant",
+        images: [
+            {
+                url: "https://signature.punjabland.ca/_next/static/media/contact.93106138.webp", // Use your contact/restaurant exterior image
+                width: 1200,
+                height: 630,
+                alt: "Signature Restaurant location in Brampton - Contact us",
+            },
+        ],
+        locale: "en_CA",
+        type: "website",
+    },
+    
+    // Twitter Card
+    twitter: {
+        card: "summary_large_image",
+        title: "Contact Signature Restaurant Brampton",
+        description: "Get in touch with Signature by Punjabland in Brampton. Find our address, phone, hours and reservations info for premium Indian fine dining.",
+        images: ["https://signature.punjabland.ca/_next/static/media/contact.93106138.webp"],
+    },
+    
+    // Canonical URL
+    alternates: {
+        canonical: "https://signature.punjabland.ca/contact",
+    },
+    
+    // Robot Instructions
+    robots: {
+        index: true,
+        follow: true,
+        googleBot: {
+            index: true,
+            follow: true,
+            "max-video-preview": -1,
+            "max-image-preview": "large",
+            "max-snippet": -1,
+        },
+    },
 };
 
 const page = () => {
@@ -31,7 +83,7 @@ const page = () => {
                 <div className="relative w-full lg:w-[650px] 2xl:w-[1100px] h-[400px] sm:h-[400px] md:h-[550px] lg:h-[600px] 2xl:h-[850px] rounded-[20px] rounded-tl-[40px] overflow-hidden">
                     <Image
                         src={heroImg}
-                        alt="Signature Restaurant Hero"
+                        alt="Contact Signature Restaurant in Brampton - Location, hours, and reservation information"
                         fill
                         className="object-cover"
                         priority
@@ -52,10 +104,11 @@ const page = () => {
                             target="_blank"
                             rel="noopener noreferrer"
                             className="w-full h-auto block"
+                            aria-label="View Signature Restaurant location on Google Maps"
                         >
                             <Image
                                 src={addressImg}
-                                alt='addressImg'
+                                alt='Signature Restaurant location map - 378 Queen St E, Brampton'
                                 className='w-full h-auto cursor-pointer'
                                 priority
                             />
@@ -89,19 +142,29 @@ const page = () => {
                             {/* Contact */}
                             <div className='flex flex-col gap-2'>
                                 <p className="text-infocardText/60 text-[14px] sm:text-[15px] font-body">Contact #</p>
-                                <p className="text-[15px] font-body text-secondary flex items-center gap-2">
-                                    <Image src={phoneIcon} alt='phoneIcon' />
+                                <a 
+                                    href="tel:+19054595559" 
+                                    className="text-[15px] font-body text-secondary flex items-center gap-2 hover:text-aboutCardHeading transition-colors"
+                                    aria-label="Call Signature Restaurant at 905-459-5559"
+                                >
+                                    <Image src={phoneIcon} alt='Phone icon' />
                                     +1 905-459-5559
-                                </p>
+                                </a>
                             </div>
 
                             {/* Location */}
                             <div className='flex flex-col gap-2'>
                                 <p className="text-infocardText/60 text-[14px] sm:text-[15px] font-body">Location</p>
-                                <p className="text-[15px] font-body text-secondary flex items-center gap-2">
-                                    <Image src={addressIcon} alt='addressIcon' />
+                                <a
+                                    href="https://share.google/aVoHTrBu7GD0q7O33"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-[15px] font-body text-secondary flex items-center gap-2 hover:text-aboutCardHeading transition-colors"
+                                    aria-label="View Signature Restaurant location on Google Maps"
+                                >
+                                    <Image src={addressIcon} alt='Location pin icon' />
                                     378 Queen St E, Brampton, ON L6V 1C3, Canada
-                                </p>
+                                </a>
                             </div>
 
                         </div>
@@ -111,36 +174,74 @@ const page = () => {
                     <div className='w-full max-w-[700px] border-aboutCardBorder border bg-aboutCardBorder/5 rounded-lg p-4'>
                         <h3 className='text-[24px] sm:text-[22px] font-heading italic text-aboutCardHeading'>Contact Our Team</h3>
 
-                        <form className="mt-4">
+                        <form className="mt-4" aria-label="Contact form">
                             <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
 
                                 <div className='flex flex-col gap-2'>
-                                    <label className='text-[18px] font-heading italic text-aboutCardHeading'>First Name</label>
-                                    <input type="text" className='bg-contactFormInputColor rounded-lg p-3 w-full' placeholder='Jane' />
+                                    <label htmlFor="firstName" className='text-[18px] font-heading italic text-aboutCardHeading'>First Name</label>
+                                    <input 
+                                        id="firstName"
+                                        name="firstName"
+                                        type="text" 
+                                        className='bg-contactFormInputColor rounded-lg p-3 w-full text-white' 
+                                        placeholder='Jane'
+                                        required 
+                                    />
                                 </div>
 
                                 <div className='flex flex-col gap-2'>
-                                    <label className='text-[18px] font-heading italic text-aboutCardHeading'>Last Name</label>
-                                    <input type="text" className='bg-contactFormInputColor rounded-lg p-3 w-full' placeholder='Doe' />
+                                    <label htmlFor="lastName" className='text-[18px] font-heading italic text-aboutCardHeading'>Last Name</label>
+                                    <input 
+                                        id="lastName"
+                                        name="lastName"
+                                        type="text" 
+                                        className='bg-contactFormInputColor rounded-lg p-3 w-full text-white' 
+                                        placeholder='Doe'
+                                        required 
+                                    />
                                 </div>
 
                                 <div className='flex flex-col gap-2'>
-                                    <label className='text-[18px] font-heading italic text-aboutCardHeading'>Contact No</label>
-                                    <input type="text" className='bg-contactFormInputColor rounded-lg p-3 w-full' placeholder='Your phone#' />
+                                    <label htmlFor="phone" className='text-[18px] font-heading italic text-aboutCardHeading'>Contact No</label>
+                                    <input 
+                                        id="phone"
+                                        name="phone"
+                                        type="tel" 
+                                        className='bg-contactFormInputColor rounded-lg p-3 w-full text-white' 
+                                        placeholder='Your phone#'
+                                        required 
+                                    />
                                 </div>
 
                                 <div className='flex flex-col gap-2'>
-                                    <label className='text-[18px] font-heading italic text-aboutCardHeading'>Email</label>
-                                    <input type="text" className='bg-contactFormInputColor rounded-lg p-3 w-full' placeholder='Your email address' />
+                                    <label htmlFor="email" className='text-[18px] font-heading italic text-aboutCardHeading'>Email</label>
+                                    <input 
+                                        id="email"
+                                        name="email"
+                                        type="email" 
+                                        className='bg-contactFormInputColor rounded-lg p-3 w-full text-white' 
+                                        placeholder='Your email address'
+                                        required 
+                                    />
                                 </div>
 
                                 <div className='flex flex-col gap-2 md:col-span-2'>
-                                    <label className='text-[18px] font-heading italic text-aboutCardHeading'>Message</label>
-                                    <textarea className='bg-contactFormInputColor rounded-lg p-3 w-full h-48 resize-none' placeholder='Type your message here' />
+                                    <label htmlFor="message" className='text-[18px] font-heading italic text-aboutCardHeading'>Message</label>
+                                    <textarea 
+                                        id="message"
+                                        name="message"
+                                        className='bg-contactFormInputColor rounded-lg p-3 w-full h-48 resize-none text-white' 
+                                        placeholder='Type your message here'
+                                        required 
+                                    />
                                 </div>
 
                                 <div className='md:col-span-2'>
-                                    <button type="submit" className='w-full font-body font-[500] py-3 rounded-lg bg-gradient-to-r from-cardGradient to-bookTableBg'>
+                                    <button 
+                                        type="submit" 
+                                        className='w-full font-body font-[500] py-3 rounded-lg bg-gradient-to-r from-cardGradient to-bookTableBg hover:opacity-90 transition-opacity'
+                                        aria-label="Send message to Signature Restaurant"
+                                    >
                                         <p className='text-bookTableText font-[300] font-body text-[14px]'>Send Message</p>
                                     </button>
                                 </div>
