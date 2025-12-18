@@ -1,6 +1,6 @@
 // src/app/page.js
 import Home from './components/Home'
-
+export const dynamic = "force-static";
 // ⭐ ADD THIS METADATA FOR HOMEPAGE ⭐
 export const metadata = {
   title: 'Signature by Punjabland | Fine Dining Indian Restaurant Brampton',

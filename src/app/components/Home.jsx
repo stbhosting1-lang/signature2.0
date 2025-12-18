@@ -1,4 +1,3 @@
-export const dynamic = "force-static";
 import Image from "next/image";
 import heroImg from "../../../public/hero.jpg";
 import menu from "../../../public/homemenu.jpg";
