@@ -4,7 +4,7 @@ import Home from './components/Home'
 
 // ⭐ ADD THIS METADATA FOR HOMEPAGE ⭐
 export const metadata = {
-  title: 'Home - Signature by Punjabland | Fine Dining Indian Restaurant Brampton',
+  title: 'Signature by Punjabland | Fine Dining Indian Restaurant Brampton',
   description: 'Experience luxury Indian fine dining in Brampton at Signature by Punjabland. Rich flavours, premium ingredients, and an elegant dining atmosphere.',
   keywords: ['Indian restaurant Brampton', 'best Indian food', 'Signature Restaurant', 'authentic Indian cuisine', 'Brampton dining', 'Indian food delivery', 'halal food Brampton'],
   

@@ -4,11 +4,9 @@ import "./globals.css";
 export const metadata = {
   title: {
     default: "Signature Restaurant | Indian Elegance on Every Plate",
-    template: "%s - Signature Restaurant"
+    template: "%s"
   },
-  description: `Signature Restaurant brings authentic Indian cuisine to the heart of Brampton. 
-    Experience a fine-dining journey where traditional flavors meet modern culinary artistry. 
-    From carefully curated spices to elegantly presented dishes, every meal is a celebration of culture, taste, and hospitality.`,
+  description: `Signature by Punjabland is an Indian fine dining restaurant in Brampton offering authentic flavors, premium ingredients, and elegant hospitality.`,
   keywords: [
     "Indian restaurant Brampton",
     "fine dining Indian cuisine",
