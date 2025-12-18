@@ -45,9 +45,10 @@ export const metadata = {
       Experience a fine-dining journey where traditional flavors meet modern culinary artistry.`,
     images: ['/og-image.png'],
   },
+  verification: {
+    google: 'googleb9db439e43b0af33',
+  },
 };
-
-
 
 
 export default function RootLayout({ children }) {
