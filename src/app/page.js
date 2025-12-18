@@ -1,5 +1,4 @@
 // src/app/page.js
-import React from 'react'
 import Home from './components/Home'
 
 // ⭐ ADD THIS METADATA FOR HOMEPAGE ⭐
@@ -9,7 +8,7 @@ export const metadata = {
   keywords: ['Indian restaurant Brampton', 'best Indian food', 'Signature Restaurant', 'authentic Indian cuisine', 'Brampton dining', 'Indian food delivery', 'halal food Brampton'],
   
   openGraph: {
-    title: 'Signature Restaurant - Authentic Indian Cuisine in Brampton',
+    title: 'Signature by Punjabland - Authentic Indian Cuisine in Brampton',
     description: 'Indian Elegance on Every Plate. Experience the finest Indian dining in Brampton.',
     url: 'https://signature.punjabland.ca',
     siteName: 'Signature Restaurant',
@@ -18,7 +17,7 @@ export const metadata = {
         url: 'https://signature.punjabland.ca/_next/static/media/location.2e39211b.jpg', // Replace with actual image
         width: 1200,
         height: 630,
-        alt: 'Signature Restaurant - Indian dining experience',
+        alt: 'Signature by Punjabland - Indian dining experience',
       },
     ],
     locale: 'en_CA',
@@ -27,7 +26,7 @@ export const metadata = {
   
   twitter: {
     card: 'summary_large_image',
-    title: 'Signature Restaurant - Best Indian Food in Brampton',
+    title: 'Signature by Punjabland - Best Indian Food in Brampton',
     description: 'Experience authentic Indian cuisine with traditional flavors.',
     images: ['https://signature.punjabland.ca/_next/static/media/location.2e39211b.jpg'],
   },
@@ -49,10 +48,6 @@ export const metadata = {
   },
 };
 
-const page = () => {
-  return (
-    <Home/>
-  )
+export default function Page() {
+  return <Home />
 }
-
-export default page
