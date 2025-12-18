@@ -2,11 +2,9 @@ import Navbar from "./components/Navbar";
 import "./globals.css";
 
 export const metadata = {
-  title: {
-    default: "Signature Restaurant | Indian Elegance on Every Plate",
-    template: "%s"
-  },
-  description: `Signature by Punjabland is an Indian fine dining restaurant in Brampton offering authentic flavors, premium ingredients, and elegant hospitality.`,
+  title: "Signature Restaurant | Indian Elegance on Every Plate",
+  description:
+    "Signature by Punjabland is an Indian fine dining restaurant in Brampton offering authentic flavors, premium ingredients, and elegant hospitality.",
   keywords: [
     "Indian restaurant Brampton",
     "fine dining Indian cuisine",
