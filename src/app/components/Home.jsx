@@ -9,7 +9,9 @@ import Link from "next/link";
 const HomeSection = () => {
     return (
         <div className="w-full bg-background py-5 overflow-x-hidden">
-
+  <h1 className="sr-only">
+        Signature by Punjabland – Fine Dining Indian Restaurant in Brampton
+      </h1>
             {/* example change */}
 
             {/* GRID WRAPPER */}

@@ -1,4 +1,3 @@
-export const dynamic = "force-static";
 import React from 'react'
 import Image from 'next/image'
 import heroImg from "../../../public/contact.webp"
@@ -6,7 +5,7 @@ import addressImg from "../../../public/Address.webp"
 import clockIcon from "../../../public/time.svg"
 import phoneIcon from "../../../public/mobile.svg"
 import addressIcon from "../../../public/maps.svg"
-
+export const dynamic = "force-static";
 // ⭐ OPTIMIZED METADATA FOR CONTACT PAGE ⭐
 export const metadata = {
     // Basic SEO (Google & Browser)
@@ -75,6 +74,9 @@ export const metadata = {
 const page = () => {
     return (
         <div className="w-full bg-background py-5 overflow-x-hidden">
+<h1 className="sr-only">
+  Contact Signature by Punjabland – Indian Fine Dining Restaurant in Brampton
+</h1>
 
             {/* GRID WRAPPER */}
             <div className="grid grid-cols-1 xl:grid-cols-2 gap-10 px-4 relative">
@@ -95,9 +97,9 @@ const page = () => {
 
                     {/* Contact Info Card */}
                     <div className='w-full max-w-[700px] border-aboutCardBorder border bg-aboutCardBorder/5 rounded-lg p-4 flex flex-col gap-5'>
-                        <h3 className='text-[24px] sm:text-[22px] font-heading italic text-aboutCardHeading'>
+                        <h2 className='text-[24px] sm:text-[22px] font-heading italic text-aboutCardHeading'>
                             Contact Info
-                        </h3>
+                        </h2>
 
                         <a
                             href="https://share.google/aVoHTrBu7GD0q7O33"
