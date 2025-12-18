@@ -1,7 +1,32 @@
-// next.config.mjs
+/** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    unoptimized: true, // allow next/image to work in static HTML
+    unoptimized: true,
+  },
+
+  swcMinify: true,
+
+  async headers() {
+    return [
+      {
+        source: '/_next/static/:path*',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
+      {
+        source: '/:all*(svg|jpg|jpeg|png|webp)',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000',
+          },
+        ],
+      },
+    ];
   },
 };
 
